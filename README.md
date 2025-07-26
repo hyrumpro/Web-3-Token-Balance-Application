@@ -1,8 +1,26 @@
-# React + Vite
+# Premium Token Portfolio Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React application displays a wallet's ETH and popular ERC‑20 token balances with current USD prices. It also shows recent transactions for any selected token.
 
-Currently, two official plugins are available:
+## Benefits
+- Clean and responsive UI powered by Tailwind CSS
+- Real‑time pricing from CoinGecko
+- Portfolio value summary
+- Quick access to transaction details on Etherscan
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Configuration
+1. Copy `.env` and add your QuickNode RPC endpoint:
+   ```
+   VITE_QUIKNODE_API_KEY=YOUR_ENDPOINT_URL
+   ```
+2. Adjust `src/config.js` to change which tokens are tracked.
+
+## Usage
+Install dependencies and start the development server:
+```bash
+npm install
+npm run dev
+```
+Open `http://localhost:5173` and enter an Ethereum address to view your portfolio.
+
+This application demonstrates premium features for a streamlined token management experience.
